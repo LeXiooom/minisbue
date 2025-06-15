@@ -1,19 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🌟 Nuestros Recuerdos</title>
+  <title>💖 Nuestros Recuerdos</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #fd6d85;
-      --secondary: #ffe4ec;
-      --bg: #fff;
-      --text: #2e2e2e;
-      --radius: 16px;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      --primary: #ff5f7e;
+      --secondary: #fef1f6;
+      --bg: #ffffff;
+      --text: #2d2d2d;
+      --radius: 20px;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     }
 
     * {
@@ -24,34 +23,34 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #fffafc, #ffe8ef);
+      background: linear-gradient(to bottom, #fff6f9, #ffe8f0);
       color: var(--text);
       padding-bottom: 50px;
     }
 
     header {
       text-align: center;
-      padding: 40px 20px 20px;
+      padding: 60px 20px 30px;
     }
 
     header h1 {
       font-family: 'Pacifico', cursive;
-      font-size: 3em;
+      font-size: 3.5em;
       color: var(--primary);
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.1em;
-      color: #555;
-      margin-top: 10px;
+      font-size: 1.2em;
+      color: #666;
     }
 
     .container {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 40px;
       padding: 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
     }
 
@@ -62,57 +61,54 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      animation: fadeInUp 0.8s ease;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
     }
 
     .card img {
       width: 100%;
-      object-fit: cover;
-      border-bottom: 3px solid var(--primary);
+      height: auto;
+      object-fit: contain;
+      border-bottom: 4px solid var(--primary);
+      background: #fafafa;
     }
 
     .text {
-      padding: 25px;
+      padding: 30px;
     }
 
     .text h2 {
-      font-size: 1.6em;
+      font-size: 1.8em;
       color: var(--primary);
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .text p {
-      font-size: 1.05em;
-      line-height: 1.6;
+      font-size: 1.1em;
+      line-height: 1.7;
       color: #444;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      color: #888;
-      font-size: 0.9em;
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      padding: 30px;
+      color: #999;
+      font-size: 1em;
+      font-family: 'Pacifico', cursive;
     }
 
     @media (min-width: 768px) {
       .card {
         flex-direction: row;
+        align-items: center;
       }
 
       .card img {
         width: 50%;
-        max-height: 300px;
+        max-height: 100%;
       }
 
       .text {
@@ -124,7 +120,7 @@
 <body>
   <header>
     <h1>Mis Momentos Contigo</h1>
-    <p>Una galería de los recuerdos que más me marcan a tu lado 💞</p>
+    <p>Un lugar donde cada foto tiene su historia 💘</p>
   </header>
 
   <main class="container">
@@ -132,7 +128,7 @@
       <img src="https://i.imgur.com/7rQSDuvh.jpg" alt="Entrenando" />
       <div class="text">
         <h2>🏋️‍♂️ Entrenando juntos</h2>
-        <p>No fue solo hacer ejercicio... fue sentir cómo me impulsabas con tu energía. Estar contigo ahí, compartiendo fuerza y enfoque, me recordó lo afortunado que soy de tenerte en mi vida.</p>
+        <p>Ese día no fue solo sudar... fue sonreír, retarnos, y vernos apoyándonos en algo que suma. Tú ahí a mi lado, me diste más motivación que cualquier música.</p>
       </div>
     </div>
 
@@ -140,7 +136,7 @@
       <img src="https://i.imgur.com/a68Wo5Kh.jpg" alt="Patinando" />
       <div class="text">
         <h2>🛼 Patinando</h2>
-        <p>Ese día parecía sacado de una peli: patines, risas, sol, tú y yo. Me hiciste sentir niño otra vez, libre y feliz con solo verte sonreír.</p>
+        <p>Patinar contigo fue como flotar en una burbuja de felicidad. Tus risas, tus tropiezos, tu forma de verme... todo se sintió perfecto. Me encantó ese momento.</p>
       </div>
     </div>
 
@@ -148,13 +144,13 @@
       <img src="https://i.imgur.com/zaY9N85h.jpg" alt="Salida" />
       <div class="text">
         <h2>🌆 Una salida más</h2>
-        <p>No importa el lugar si es contigo. Esa tarde fue simple, pero mágica. Caminamos, hablamos, y sin darnos cuenta creamos otro recuerdo que guardaré por siempre.</p>
+        <p>Nos escapamos un rato del mundo, sin ruido, solo tú y yo. Puede parecer poco, pero para mí fue todo. Gracias por regalarme tantas memorias así.</p>
       </div>
     </div>
   </main>
 
   <footer>
-    Hecho con 💖 por Aarom para su persona favorita.
+    Hecho con 💖 por Aarom para su niña favorita.
   </footer>
 </body>
 </html>
