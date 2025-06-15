@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌟 Nuestros Recuerdos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #fd6d85;
+      --secondary: #ffe4ec;
+      --bg: #fff;
+      --text: #2e2e2e;
+      --radius: 16px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #fffafc, #ffe8ef);
+      color: var(--text);
+      padding-bottom: 50px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: var(--primary);
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .card img {
+      width: 100%;
+      object-fit: cover;
+      border-bottom: 3px solid var(--primary);
+    }
+
+    .text {
+      padding: 25px;
+    }
+
+    .text h2 {
+      font-size: 1.6em;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .text p {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        flex-direction: row;
+      }
+
+      .card img {
+        width: 50%;
+        max-height: 300px;
+      }
+
+      .text {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mis Momentos Contigo</h1>
+    <p>Una galería de los recuerdos que más me marcan a tu lado 💞</p>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <img src="https://i.imgur.com/7rQSDuvh.jpg" alt="Entrenando" />
+      <div class="text">
+        <h2>🏋️‍♂️ Entrenando juntos</h2>
+        <p>No fue solo hacer ejercicio... fue sentir cómo me impulsabas con tu energía. Estar contigo ahí, compartiendo fuerza y enfoque, me recordó lo afortunado que soy de tenerte en mi vida.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/a68Wo5Kh.jpg" alt="Patinando" />
+      <div class="text">
+        <h2>🛼 Patinando</h2>
+        <p>Ese día parecía sacado de una peli: patines, risas, sol, tú y yo. Me hiciste sentir niño otra vez, libre y feliz con solo verte sonreír.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/zaY9N85h.jpg" alt="Salida" />
+      <div class="text">
+        <h2>🌆 Una salida más</h2>
+        <p>No importa el lugar si es contigo. Esa tarde fue simple, pero mágica. Caminamos, hablamos, y sin darnos cuenta creamos otro recuerdo que guardaré por siempre.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Hecho con 💖 por Aarom para su persona favorita.
+  </footer>
+</body>
+</html>
